@@ -68,8 +68,59 @@ body{
     color: #6C6C6C;
     font-size: 15px;
 }
+
+/* login form */
+.frame-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    background-color: rgb(117, 119, 253);
+    border-radius: 5px;
+}
+.login-form{
+    display: flex;
+    flex-direction:column;
+    background-color: gray;
+    border-radius: 5px;
+    padding: 5px;
+}
+.login-form input, button {
+    font-size: 1.3em;
+    margin-top: 15px;
+    padding-left: 12px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.login-form button {
+    background-color: orangered;
+    color: papayawhip;
+    font-weight: 800;
+    padding: 5px;
+    border: 0;
+}
+
+/* photo frame */
+.photo-frame{
+    width: 500px;
+    height: 200px;
+    border: 3px solid rebeccapurple;
+    border-radius: 15px;
+    /* position: relative; */
+    margin: 10px;
+    overflow: hidden;
+}
+.photo img{
+    width: 100%;
+    border-radius: 10px;
+}
+.photo-frame:hover .photo{
+    transform:scale(2.0) skew(30deg);
+    transition: transform 2s ease-in-out;
+}
+
+/* Footer is here */
 .footer{
-    margin-top: 156px;
+    margin-top: 130px;
     text-align: center;
 }
 .logo{
@@ -87,7 +138,7 @@ body{
 /***Mobile Devices***/
 @media only screen and (max-width:688px) {
     .banner-text, .banner-image{
-        width:80%;
+        width:100%;
         height: auto;
     }
     .header-section, .container, .footer{
