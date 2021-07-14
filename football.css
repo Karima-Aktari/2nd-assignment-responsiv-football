@@ -9,14 +9,13 @@ body{
 
 header{
     background-color:rgb(18, 18, 175);
-    position:absolute;
-}
+} 
 .header-section{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 102px;
     font-size: 30px;
-    margin: 80px 135px;
+    padding: 80px 135px;
     color: #FFFFFF; 
 }
 .banner-text a{
@@ -34,8 +33,37 @@ header{
     width: 556px;
     height: 438px;
 }
+/* hover with transition */
  header :hover .banner-image{
      transform:rotate(45deg);
      transition: transform 1s;
-    /* color: rgb(134, 103, 109); */
+}
+
+/* players css */
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin-top: 56px;
+    margin-left:130px;
+    margin-right: 210px;
+}
+.player{
+   width:300px;
+   background: #FFFFFF;
+   padding: 15px;
+   box-shadow: 0 .2em .4em rgba(0,0,0,.4);
+}
+.player img{
+    width: 300px;
+    height: 256px;
+    border-radius: 5px;
+}
+.player h1{
+    color: #18191F;
+    font-size: 28px;
+}
+.player p{
+    color: #6C6C6C;
+    font-size: 15px;
 }
