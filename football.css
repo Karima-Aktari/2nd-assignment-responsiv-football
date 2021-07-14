@@ -1,11 +1,12 @@
-/* google font poppins */
+/***---google font poppins---***/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+/*-----body part-----*/
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0;
 }
 
-/* header styles */
+/*---header styles---*/
 
 .header{
     background-color:rgb(18, 18, 175);
@@ -33,13 +34,13 @@ body{
     width: 556px;
     height: 438px;
 }
-/* hover with transition */
+/***hover with transition***/
  header :hover .banner-image{
      transform:rotate(45deg);
      transition: transform 1s;
 }
 
-/* players css */
+/*---players css---*/
 .container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -68,8 +69,6 @@ body{
     font-size: 15px;
 }
 .footer{
-    /* display:grid;
-    grid-template-columns: 490px; */
     margin-top: 156px;
     text-align: center;
 }
@@ -83,9 +82,9 @@ body{
     font-size: 32px;
 }
 
-/* @Media Queries */
-/* Mobile Devices */
+/*---- @Media Queries-----*/
 
+/***Mobile Devices***/
 @media only screen and (max-width:688px) {
     .banner-text, .banner-image{
         width:80%;
@@ -97,7 +96,7 @@ body{
     }
 }
 
-/* tablet devices */
+/*** tablet devices***/
 
 @media only screen and (min-width:668px) and (max-width:992px) {
     .header-section{
