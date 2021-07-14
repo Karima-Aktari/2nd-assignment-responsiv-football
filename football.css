@@ -7,7 +7,7 @@ body{
 
 /* header styles */
 
-header{
+.header{
     background-color:rgb(18, 18, 175);
 } 
 .header-section{
@@ -67,3 +67,46 @@ header{
     color: #6C6C6C;
     font-size: 15px;
 }
+.footer{
+    /* display:grid;
+    grid-template-columns: 490px; */
+    margin-top: 156px;
+    text-align: center;
+}
+.logo{
+    width: 480px;
+    height: 110px;
+}
+.icons{
+    text-decoration: none;
+    color: #969BAB;
+    font-size: 32px;
+}
+
+/* @Media Queries */
+/* Mobile Devices */
+
+@media only screen and (max-width:688px) {
+    .banner-text, .banner-image{
+        width:80%;
+        height: auto;
+    }
+    .header-section, .container, .footer{
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+}
+
+/* tablet devices */
+
+@media only screen and (min-width:668px) and (max-width:992px) {
+    .header-section{
+        grid-template-columns: repeat(1, 1fr);
+}
+    .container{
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+
+
